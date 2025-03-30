@@ -16,5 +16,4 @@ metadata:
   creationTimestamp: "2025-03-30T10:27:52Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1348"
-  uid: bd810cd6-ac01-4676-9116-ac88f1e2fc09  #don't delete this
+  uid: bd810cd6-ac01-4676-9116-ac88f1e2fc09  

@@ -4,16 +4,17 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::315069654700:role/eksctl-expense-1-nodegroup-expense-NodeInstanceRole-QpZ8MlrLGAdG
+      rolearn: arn:aws:iam::650732254329:role/eksctl-abn-nodegroup-abn-NodeInstanceRole-yN4TtCGaByuR
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
-      - expense-pod-reader
-      userarn: arn:aws:iam::315069654700:user/harish
-      username: harish
+      - abn-pod-reader
+      userarn: arn:aws:iam::650732254329:user/sandeep
+      username: sandeep      
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2024-07-05T01:35:42Z"
+  creationTimestamp: "2025-03-30T10:27:52Z"
   name: aws-auth
   namespace: kube-system
-  uid: eea0273c-8df3-4176-8901-b17003f83095 #don't delete this
+  resourceVersion: "1348"
+  uid: bd810cd6-ac01-4676-9116-ac88f1e2fc09  #don't delete this

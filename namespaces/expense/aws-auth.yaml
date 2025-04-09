@@ -4,16 +4,16 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::650732254329:role/eksctl-abn-nodegroup-abn-NodeInstanceRole-WSY7MjP88PVw
+      rolearn: arn:aws:iam::650732254329:role/eksctl-abn-nodegroup-abn-NodeInstanceRole-x7837DMRfIT3
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
       - abn-pod-reader
       userarn: arn:aws:iam::650732254329:user/sandeep
-      username: sandeep      
+      username: sandeep     
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2025-04-02T15:14:07Z"
+  creationTimestamp: "2025-04-09T06:09:20Z"
   name: aws-auth
   namespace: kube-system
-  uid: a37e2af7-989a-4a81-ad8c-38eb83522e0b
+  uid: 8b722780-7ae1-48f0-a148-34c4947e4f34
